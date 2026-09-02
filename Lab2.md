@@ -22,6 +22,17 @@ kubectl delete po nginx # Notice the shorthand
 Create a file called `nginx-pod.yaml`
 ```yaml
 # Put a file here
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+
 ```
 
 ```bash

@@ -71,10 +71,14 @@ kubectl get pods
 kubectl delete po <pod-name>
 ```
 
+## Reconciliaton loop in action
 3. Check the pods again
 ```bash
 kubectl get pods
 ```
+
+*The deleted pod is back again with a new name*
+
 ## Let's update the deployment
 
 update the previos deployment manifest `nginx-deployment.yaml`
